@@ -1,0 +1,10 @@
+ 1008  rm cmds.log
+ 1009  history > cmds.log | tail -5
+ 1010  ls
+ 1011  cat cmds.log
+ 1012  clear
+ 1013  ls
+ 1014  rm cmds.log index.html
+ 1015  ls
+ 1016  clear
+ 1017  wget www.github.com
