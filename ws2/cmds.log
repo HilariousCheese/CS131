@@ -1,0 +1,22 @@
+    1  exit
+    2  cd /datasets/
+    3  ls -l
+    4  exit
+    5  cd CS131/ws2/
+    6  ls
+    7  cd taxidata/
+    8  ls
+    9  vi 2019-03.csv 
+   10  grep 2019-03-12|dropoff 2019-03.csv 
+   11  grep -E '2019-03-12|dropoff' 2019-03.csv 
+   12  grep -E '","2019-03-12' 2019-03.csv 
+   13  grep -E '","2019-03-12' 2019-03.csv | tail -20
+   14  grep -E '","2019-03-12' 2019-03.csv | tail -20 >> results.txt
+   15  clear
+   16  ls
+   17  cat results.txt
+   18  grep -E '","2019-03-12' 2019-03.csv | wc -l
+   19  grep -E '","2019-03-12' 2019-03.csv | wc -l >> results.txt 
+   20  cat results.txt 
+   21  clear
+   22  history > cmds.log
