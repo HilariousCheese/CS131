@@ -66,6 +66,6 @@
   236  vi a1.txt 
   237  ls /etc/-----Q9
   238  vi a1.txt 
-  239  ls -l /etc/-----Q10
+  239  ls -l /etc/os-release-----Q10
   240  vi a1.txt 
   241  history >> cmds.log
