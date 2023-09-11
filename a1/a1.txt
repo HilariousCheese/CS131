@@ -1,0 +1,9 @@
+2) /mnt/scratch/tak23fa;	echo$HOME
+3) uid=1020(tak23fa) gid=1020(tak23fa) groups=1020(tak23fa);	id tak23fa
+4) Can't cd in that directory;	Can ls and ls -l to temp;	Can not create files	
+5) I am allowed to mv the directory to "temp3" but it will show nothing if the temp2 directory is empty;	Not allow to cp a directory;	cp -r
+6) /proc/meminfo contains memory info;	/proc/cpuinfo contains cpu info
+7) MemTotal:       73080512 kB
+8) 256 processors, POWER8, 3.425 Ghz 
+9) /etc/os-release 
+10) lrwxrwxrwx.  1 root root       22 Apr  6  2022 os-release

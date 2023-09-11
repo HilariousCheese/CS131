@@ -1,0 +1,71 @@
+  171  cd CS131/
+  172  mkdir a1-----Q1
+  173  cd a1
+  174  echo $HOME-----Q2
+  175  vi a1.txt
+  176  id tak23fa-----Q3
+  177  vi a1.txt
+  178  mkdir temp-----Q4
+  179  chmod -x temp/-----Q4
+  180  cd temp/-----Q4
+  181  ls temp/-----Q4
+  182  ls -l temp/-----Q4
+  183  vi t.txt temp/
+  184  ls -l temp/
+  185  vi t.txt temp/
+  186  vi a1.txt 
+  187  cd temp/
+  188  mkdir temp2-----Q5
+  189  mv temp2/ ./temp3-----Q5
+  190  ls
+  191  cd temp3
+  192  ls
+  193  cd ..
+  194  clear
+  195  ls
+  196  rm temp3/
+  197  rm temp3 -rf
+  198  ls
+  199  mkdir temp2
+  200  ls
+  201  ls ./
+  202  mv temp2 ./temp3
+  203  ls
+  204  cd temp3
+  205  ls
+  206  cd ..
+  207  cd temp3/
+  208  ls -a
+  209  cd ..
+  210  rm -rf temp3
+  211  mkdir temp2
+  212  cd temp2/
+  213  touch a.txt
+  214  cd ..
+  215  ls
+  216  mv temp2/ ./temp3
+  217  cd temp3
+  218  ls
+  219  cd ..
+  220  vi a1.txt 
+  221  mkdir temp4
+  222  cp -r temp3/ temp4/-----Q5
+  223  cd temp4/
+  224  ls
+  225  cd ..
+  226  ls
+  227  rm -r temp4/
+  228  ls
+  229  vi a1.txt 
+  230  ls
+  231  ls /proc/-----Q6
+  232  vi a1.txt 
+  233  head /proc/meminfo-----Q7
+  234  vi a1.txt 
+  235  cat /proc/cpuinfo -----Q8
+  236  vi a1.txt 
+  237  ls /etc/-----Q9
+  238  vi a1.txt 
+  239  ls -l /etc/-----Q10
+  240  vi a1.txt 
+  241  history >> cmds.log
