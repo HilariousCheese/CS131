@@ -1,0 +1,16 @@
+  119  cat 2019-01.csv | awk -F ',' '{print $8}' | sort -n > ~/CS131/ws3/ws3.txt 
+  120  cd ..
+  121  cd ws3/
+  122  less ws3.txt 
+  123  uniq -c ws3.txt 
+  124  uniq -c ws3.txt | sort -n
+  125  cd ..
+  126  cd taxidata/
+  127  cat 2019-01.csv | awk -F ',' '{print $8}' | sort -n | uniq -c | sort -n |tail -3 > ~/CS131/ws3/ws3.txt 
+  128  cd ..
+  129  cd ws3/
+  130  cat ws3.txt 
+  131  vi ws3.txt 
+  132  cat ~/CS131/taxidata/2019-02.csv | awk -F ',' '{print $8}' | sort -n | uniq -c | sort -n |tail -3 >> ws3.txt 
+  133  vi ws3.txt 
+  134  history >> cmds.log
