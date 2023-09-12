@@ -6,4 +6,4 @@
 7) MemTotal:       73080512 kB
 8) 256 processors, POWER8, 3.425 Ghz 
 9) /etc/os-release 
-10) lrwxrwxrwx.  1 root root       22 Apr  6  2022 os-release
+10) lrwxrwxrwx.  1 root root       22 Apr  6  2022 os-release; Allow users to read, write, and execute the file.
