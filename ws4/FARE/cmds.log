@@ -1,0 +1,94 @@
+  332  cat 2019-06.csv | head -10
+  333  cat 2019-06.csv | grep -E "48.0,161.0"
+  334  cat 2019-06.csv | grep -E ",48.0,161.0"
+  335  cat 2019-06.csv | grep -E ",48.0,161.0" | awk -F ',' '{print $11}' >> ~/CS131/ws4/FARE/48.0-161.0.txt
+  336  cd ..
+  337  cd ws4/FARE/
+  338  ls
+  339  cat 48.0-161.0.txt 
+  340  wc -l 48.0-161.0.txt 
+  341  cd ..
+  342  cd taxidata/
+  343  cat 2019-06.csv | grep -E ",48.0,161.0" | wc -l
+  344  cd ..
+  345  cd ws4/FARE/
+  346  ls
+  347  ls
+  348  bc man
+  349  cd CS131/ws4/FARE/
+  350  ls
+  351  cat 48.0-161.0.txt 
+  352  cd ..
+  353  ls
+  354  cd taxidata/
+  355  cat 2019-06.csv | grep -E ",48.0,161.0"
+  356  cd CS131/
+  357  ls
+  358  cd taxidata/
+  359  cat 2019-06.csv | head -10
+  360* 
+  361  cd ~/CS131/ws4/FARE/
+  362  ls
+  363  cat 79.0-148.0.txt 
+  364  lear
+  365  clear
+  366  less 48.0-161.0.txt 
+  367  cd ~/CS131/taxidata/
+  368  cat 2019-06.csv | head -10
+  369  cat 2019-06.csv | greb -E ",79.0,148.0" | awk -F ',' '{print $11}' > ~/CS131/ws4/FARE/79.0-148.0.txt 
+  370  cat 2019-06.csv | grep -E ",79.0,148.0" | awk -F ',' '{print $11}' > ~/CS131/ws4/FARE/79.0-148.0.txt 
+  371  cd ..
+  372  cd ws4/FARE/
+  373  cat 79.0-148.0.txt 
+  374  clear
+  375  ls
+  376  less 48.0-161.0.txt 
+  377  grep -E '[0-9]+' 48.0-161.0.txt 
+  378  clear
+  379  ls
+  380  w
+  381  l
+  382  clear
+  383  ls
+  384  rm 48.0-161.0.txt 
+  385  cd ..
+  386  cd
+  387  cd CS131/taxidata/
+  388  less 2019-06.csv 
+  389  cat 2019-06.csv | grep -E ",211.0,68.0" | awk -F ',' '{print $11}' >> ~/CS131/ws4/FARE/211.0-68.0.txt
+  390  cd
+  391  cd CS131/ws4/FARE/
+  392  ls
+  393  cat 211.0-68.0.txt 
+  394  clear
+  395  grep -Eo '[0-9]+([.][0-9]+)?' 79.0-148.0.txt 
+  396  grep -Eo '[0-9]+([.][0-9]+)?' 79.0-148.0.txt | awk '{total += $1; count++} END {print total / count} >>ws4.txt
+  397  cat 79.0-148.0.txt | grep -Eo '[0-9]+([.][0-9]+)?' | awk '{total += $1; count++} END {print total / count} >>ws4.txt
+
+  398  cat 79.0-148.0.txt | grep -Eo '[0-9]+([.][0-9]+)?' | awk '{total += $1; count++} END {print total / count} | bc >> ws4.txt
+
+  399  cat 79.0-148.0.txt | grep -Eo '[0-9]+([.][0-9]+)?' | awk '{total += $1; count++} END {if (count > 0) print total / count} | bc >> ws4.txt
+
+  400  cat 79.0-148.0.txt | grep -Eo '[0-9]+([.][0-9]+)?' | awk '{total += $1; count++ } END { print total / count}' | bc >> ws4.txt
+  401  cat ws4.txt 
+  402  echo "211.0-68.0" >> ws4.txt 
+  403  cat ws4.txt 
+  404  cat 211.0-68.0.txt | grep -Eo '[0-9]+([.][0-9]+)?' | awk '{total += $1; count++ } END { print total / count}' | bc >> ws4.txt
+  405  vi ws4.txt 
+  406  ls
+  407  history >> cmds.log
+  408  vi cmds.log 
+  409  cd ..
+  410  cd
+  411  ls -a
+  412  vi .bashrc 
+  413  ll
+  414  cat .basrc
+  415  cat .bashrc 
+  416  l
+  417  source ~/.bashrc 
+  418  l
+  419  w
+  420  cd CS131/ws4/FARE/
+  421  ls
+  422  history > cmds.log 
