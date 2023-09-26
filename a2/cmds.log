@@ -1,0 +1,115 @@
+  676  cat 2019-05.csv | awk -F ',' '{print $18}' | head -12
+  677  cat 2019-05.csv | awk -F ',' '{print $17}' | head -12
+  678  cat 2019-05.csv |grep "2019-05-11" | awk -F ',' '{print $17}' | awk '{total += $1; count++} END {print total/count' | bc >> ~/CS131/a2/a2.txt
+  679  cat 2019-05.csv |grep "2019-05-11" | awk -F ',' '{print $17}' | awk '{total += $1; count++} END {print total/ count' | bc >> ~/CS131/a2/a2.txt
+  680  clear
+  681  cat 2019-05.csv |grep "2019-05-11" | awk -F ',' '{print $17}' | awk '{total += $1; count++ } END { print total / count}' | bc >> ~/CcS131/a2/a2.txt
+  682  cat 2019-05.csv |grep "2019-05-11" | awk -F ',' '{print $17}' | awk '{total += $1; count++ } END { print total / count}' | bc >> ~/CS131/a2/a2.txt
+  683  cd ..
+  684  cs a2/
+  685  cd a2/
+  686  cat a2.txt 
+  687  vi a2.txt 
+  688  cd ..
+  689  cd taxidata/
+  690  cat 2019-05.csv |grep "2019-05-11" | awk -F ',' '{print $17}' | sort -n
+  691  cat 2019-05.csv | grep "1309.8"
+  692  cat 2019-05.csv |grep "2019-05-11" | awk -F ',' '{print $17}' | sort -n | tail -1 >> ~/CS131/a2/a2.txt 
+  693  cd ..
+  694  cd a2/
+  695  vi a2.txt 
+  696  cat a2.txt 
+  697  vi a2.txt 
+  698  cd ..
+  699  cd taxidata/
+  700  cat 2019-05.csv | head -1
+  701  cat 2019-05.csv | head -2
+  702  cat 2019-05.csv | head -10
+  703  cat 2019-05.csv | awk -F ',' '{print $4}'
+  704  clear
+  705  cat 2019-05.csv | head -120
+  706  cat 2019-05.csv | head -50
+  707  cat 2019-05.csv | grep -E "^([^,]*,){3}" | head -10
+  708  cat 2019-05.csv | grep -v "^([^,]*,){3}1,2" |
+  709  cat 2019-05.csv | grep -v "^([^,]*,){3}2" |
+  710  cat 2019-05.csv | grep -v "^([^,]*,){3}2"
+  711  cat 2019-05.csv | grep -v "^([^,]*,){3}"|head -50
+  712  cat 2019-05.csv | grep -E "^([^,]*,){3}" | grep -v "^([^,]*,){3}1.0 | head -10
+
+
+  713  cat 2019-05.csv | grep -E "^([^,]*,){3}" | grep -v "^([^,]*,){3}1.0" | head -10
+  714  cat 2019-05.csv | grep -v "^([^,]*,){3}"|head -50
+  715  cat 2019-05.csv | grep -v "^([^,]*,){3}[3-9]"| head -10
+  716  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-9]"| head -10
+  717  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-09]"
+  718  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-99]"
+  719  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-99]" | head -10
+  720  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-99]" | awk -F ',' '{print $9}'| head -10
+  721  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-99]" | awk -F ',' '{print $9}'| sort -n | uniq -c
+  722  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-99]" | awk -F ',' '{print $9}'| sort -n
+  723  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-99]" | awk -F ',' '{print $9}'
+  724  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-99]" | awk -F ',' '{print $9}' | sort -n | uniq -c | tail -10 >> ~/CS131/a2/a2.txt 
+  725  cd ..
+  726  cd a2/
+  727  cat a2.txt 
+  728  vi a2.txt 
+  729  cd ..
+  730  cd taxidata/
+  731  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-99]" | awk -F ',' '{print $9}' | sort -n
+  732  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-99]" | awk -F ',' '{print $9}' | sort -n |uniq -c | sort -n |tail -10
+
+Task 3
+  733  cat 2019-05.csv | grep -E "^([^,]*,){3}[3-99]" | awk -F ',' '{print $9}' | sort -n |uniq -c | sort -n |tail -10 >> ~/CS131/a2/a2.txt 
+
+  734  cat ~/CS131/a2/a2.txt 
+  735  cat 2019-05.csv | grep -E "2019-05-20" | awk -F ',' '{print $8}'
+  736  cat 2019-05.csv | grep -E "2019-05-20" | head -10
+  737  vi ~/CS131/a2/a2.txt 
+  738  cat 2019-05.csv | grep -E "^([^,]*,){1}2019-05-11" | head -10
+  739  cat 2019-05.csv | grep -E "^([^,]*,){1}'2019-05-11'" | head -10
+  740  cat 2019-05.csv | grep -E "^([^,]*,){1}" | head -10
+  741  cat 2019-05.csv | grep -E "^([^,]*,){1}\2019-05-11" | head -10
+  742  cat 2019-05.csv | grep -E "^([^,]*,){1}2019-05-11" | head -10
+  743  cat 2019-05.csv | grep -E "^([^,]*,){1}2019" | head -10
+  744  cat 2019-05.csv | grep -E "^([^,]*,){2}2019" | head -10
+  745  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-11"" | head -10
+  746  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-11\" | head -10
+  747  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-11\"" | head -10
+  748  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-11" | head -10
+  749  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-11" | awk -F ',' '{print $17}' | head -10
+
+Task 1
+  750  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-11" | awk -F ',' '{print $17}' | awk '{total += $1; count++} END {print total/count}' | bc >> ~/CS131/a2/a2.txt 
+  751  vi ~/CS131/a2/a2.txt 
+
+Task 2
+  752  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-11" | awk -F ',' '{print $17}' | sort -n | tail -1 >> ~/CS131/a2/a2.txt 
+  753  vi ~/CS131/a2/a2.txt 
+  754  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-11" | grep "2019-05-12"
+  755  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-11" | head -50
+  756  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-20" | awk -F ',' {print $8}' | sort -n | uniq -c | sort -n | tail -1
+  757  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-20" | awk -F ',''{print $8}' | sort -n | uniq -c | sort -n | tail -1
+  758  clear
+  759  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-20" | awk -F ',' '{print $8}' | sort -n | uniq -c | sort -n | tail -1
+  760  cat 2019-05.csv | head -10
+
+Task 4
+  761  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-20" | awk -F ',' '{print $8}' | sort -n | uniq -c | sort -n | tail -1 >> ~/CS131/a2/05-20.top.pu.txt
+  762  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-20" | grep -E "^([^,]*,){7}237"
+  763  cat 2019-05.csv | grep -E "^([^,]*,){1}\"2019-05-20" | grep -E "^([^,]*,){7}237.0" | awk -F ',' '{print $9}' | sort -n | uniq -c | sort -n | tail -1 >> ~/CS131/a2/a2.txt
+
+  764* cat 2019-05.csv | grep -E "^([^,]*,){1}\"20
+  765  vi ~/CS131/a2/a2.txt 
+  766  cat .
+  767  cat ./
+  768  ls
+  769  cat 2019-*
+  770  cat 2019-* | awk -F ',' '{print $8}' | sort -n | uniq -c | sort -n | tail -1
+
+Task 5
+  771  cat 2019-* | awk -F ',' '{print $8}' | sort -n | uniq -c | sort -n | tail -1 >> ~/CS131/a2/a2.txt 
+
+  772  cd ..
+  773  cd a2/
+  774  vi a2.txt 
+  775  history 100 >> cmds.log

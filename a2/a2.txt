@@ -1,0 +1,23 @@
+1. Average amount paid who were picked up on 2019-05-11
+  17.8655
+
+2. Highest total amount paid who were picked up on 2019-05-11
+  1309.8
+
+3. 10 most popular dropoff location with three or more customers
+  24609 234.0
+  25051 239.0
+  26782 142.0
+  27485 48.0
+  27895 162.0
+  28506 170.0
+  33678 230.0
+  36990 161.0
+  37140 237.0
+  39909 236.0
+
+4. The most popular dropoff location from the most popular pickup location on 05-20-2019
+  1911 236.0
+
+5. Most popular pickup loation in 2019
+  3641682 237.0
