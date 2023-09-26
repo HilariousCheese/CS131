@@ -1,0 +1,50 @@
+  704  ls
+  705  cd !
+  706  cd ~/CS131/ws5/do234/
+  707  ls
+  708  vi redirect.sh 
+  709  ./redirect.sh
+  710  vi redirect.sh 
+  711  ./redirect.sh
+  712  ls
+  713  ls -lrt
+  714  ls -l | wc -l
+  715  vi redirect.sh 
+  716  ./redirect.sh
+  717  cat 1.0.txt | wc -l
+  718  cat 1.0.txt 
+  719  vi redirect.sh 
+  720  ./redirect.sh
+  721  cat 1.0.txt | wc -l
+  722  cat 1.0.txt 
+  723  cat ~/CS131/taxidata/2019-08.csv | grep ",1.0,234.0" | wc -l
+  724  ls
+  725  cat top100.txt 
+  726  clear
+  727  ls
+  728  cat find-top100.sh 
+  729  cat ~/CS131/taxidata/2019-08.csv | grep ",1.0,234.0" | wc -l
+  730  cat ~/CS131/taxidata/2019-08.csv | grep ",1.0,234.0"
+  731  cat ~/CS131/taxidata/2019-08.csv | grep ",1.0,234.0" | uniq -c
+  732  cat 1.0.txt | wc -l | echo "1.0" >> ws5.txt
+  733  cat ws5.txt 
+  734  rm ws5.txt 
+  735  cat 1.0.txt | wc -l >> ws5.txt
+  736  cat ws5.txt 
+  737  cat 3.0.txt | wc -l >> ws5.txt
+  738  cat top100.txt | grep "3.0"
+  739  cat top100.txt | grep "48.0"
+  740  cat top100.txt | grep "223.0"
+  741  cat 48.0.txt | wc -l >> ws5.txt
+  742  cat 223.0.txt | wc -l >> ws5.txt
+  743  vi ws5.txt 
+  744  cat ~/CS131/taxidata/2019-08.csv | grep ",48.0,234.0" | wc -l
+  745  cat ws5.txt 
+  746  ls
+  747  cat redirect.sh 
+  748  pickup=""
+  749  for ((i = 1; i <= 100; i++)); do     pickup=$(sed -n "${i}p" top100.onlyLocation.txt);     cat ~/CS131/taxidata/2019-08.csv | grep ",$pickup\,234" > ~/CS131/ws5/do234/$pickup.txt;     echo "redirecting $pickup"; 
+  750  pickup=""; for ((i = 1; i <= 100; i++)); do pickup=$(sed -n "${i}p" top100.onlyLocation.txt); cat ~/CS131/taxidata/2019-08.csv | grep ",$pickup\,234" > ~/CS131/ws5/do234/$pickup.txt; echo "redirecting $pickup"; done
+  751  history 30 >>cmds.log
+  752  cat cmds.log 
+  753  history 50 >cmds.log
