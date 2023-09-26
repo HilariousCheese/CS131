@@ -9,3 +9,6 @@ cs131/ws5/do234/48.0.txt
 
 cs131/ws5/do234/223.0.txt
 24
+
+
+more commands in sh scripts
