@@ -1,0 +1,50 @@
+  904  cat 2019-11.csv | head -10
+  905  sed man
+  906  man sed
+  907  sed -n '/2.0,"2019-11/p' 2019-11.csv 
+  908  sed -n '/2.0,"2019-11/p' 2019-11.csv >> ~/CS131/ws6/vendor2.csv
+  909  cd ~/CS131/ws6/
+  910  ls
+  911  wc -l vendor2.csv >> ws6.txt
+  912  cat ws6.txt 
+  913  wc -l vendor2.csv 
+  914  wc vendor2.csv 
+  915  cd ~/CS131/taxidata/
+  916  ls
+  917  sed -n '/2.0,"2019/p' 2019-11.csv > ~/CS131/ws6/vendor2.csv
+  918  wc -l ~/CS131/ws6/vendor2.csv 
+  919  sed -n '/2.0,"/p' 2019-11.csv > ~/CS131/ws6/vendor2.csv
+  920  wc -l ~/CS131/ws6/vendor2.csv 
+  921  cd ..
+  922  cd ws6/
+  923  ls
+  924  wc -l vendor2.csv > ws6.txt 
+  925  cat ws6.txt 
+  926  cd ~/CS131/taxidata/
+  927  ls
+  928  sed 's/[:-']//g' 2019-11.csv > no-separators.csv
+  929  sed 's/[:-"]//g' 2019-11.csv > ~/CS131/ws6/no-separators.csv
+  930  sed 's/[:-"]//g' 2019-11.csv 
+  931  sed 's/\;"-//g' 2019-11.csv 
+  932  sed 's/\;"-//g' 2019-11.csv > ~/CS131/ws6/no-separators.csv
+  933  cat ~/CS131/ws6/no-separators.csv | head -10
+  934  sed -e 's/\"//' 2019-11.csv 
+  935  sed -e 's/\"//' -e 's/\://' -e 's/\-//' 2019-11.csv 
+  936  sed -e 's/\"//g' -e 's/\://g' -e 's/\-//g' 2019-11.csv 
+  937  sed -e 's/\"//g' -e 's/\://g' -e 's/\-//g' 2019-11.csv > ~/CS131/ws6/no-separators.csv 
+  938  cd 
+  939  cd CS131/ws6/
+  940  head -10 no-separators.csv >> ws6.txt 
+  941  cat ws6.txt 
+  942  vi ws6.txt 
+  943  cd
+  944  cd CS131/taxidata/
+  945  l
+  946  cd ~/CS131/ws6/
+  947  sed 's/\.[0-9]//g' no-separators.csv 
+  948  sed 's/\.[0-9]*//g' no-separators.csv 
+  949  sed 's/\.[0-9]*//g' no-separators.csv > no-fractions.csv
+  950  head -10 no-fractions.csv 
+  951  head -10 no-fractions.csv >> ws6.txt 
+  952  vi ws6.txt 
+  953  history 50 > cmds.log
