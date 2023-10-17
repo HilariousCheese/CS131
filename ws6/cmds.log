@@ -13,6 +13,8 @@
   916  ls
   917  sed -n '/2.0,"2019/p' 2019-11.csv > ~/CS131/ws6/vendor2.csv
   918  wc -l ~/CS131/ws6/vendor2.csv 
+
+Task 1
   919  sed -n '/2.0,"/p' 2019-11.csv > ~/CS131/ws6/vendor2.csv
   920  wc -l ~/CS131/ws6/vendor2.csv 
   921  cd ..
@@ -31,6 +33,8 @@
   934  sed -e 's/\"//' 2019-11.csv 
   935  sed -e 's/\"//' -e 's/\://' -e 's/\-//' 2019-11.csv 
   936  sed -e 's/\"//g' -e 's/\://g' -e 's/\-//g' 2019-11.csv 
+
+Task 2
   937  sed -e 's/\"//g' -e 's/\://g' -e 's/\-//g' 2019-11.csv > ~/CS131/ws6/no-separators.csv 
   938  cd 
   939  cd CS131/ws6/
@@ -43,6 +47,8 @@
   946  cd ~/CS131/ws6/
   947  sed 's/\.[0-9]//g' no-separators.csv 
   948  sed 's/\.[0-9]*//g' no-separators.csv 
+
+Task 3
   949  sed 's/\.[0-9]*//g' no-separators.csv > no-fractions.csv
   950  head -10 no-fractions.csv 
   951  head -10 no-fractions.csv >> ws6.txt 
