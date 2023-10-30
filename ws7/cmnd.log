@@ -1,0 +1,22 @@
+ 1022  cat ~/CS131/ws7/ws7.txt 
+ 1023  clear
+ 1024  awk -F ',' '$14 >= 10
+ 1025  awk -F ',' '$14 >= 10 {count[$14}++} END {for (val in count) print val, count[val]}' 2019-12.csv > ~/CS131/ws7/ws7.txt 
+ 1026  awk -F ',' '$14 >= 10 {count[$14]++} END {for (val in count) print val, count[val]}' 2019-12.csv > ~/CS131/ws7/ws7.txt 
+ 1027  cat ~/CS131/ws7/ws7.txt 
+ 1028  awk -F ',' '$14 >= 10 {count[$14]++} END {for (val in count) print val, count[val]}' 2019-12.csv| sort -r | head -10
+ 1029  awk -F ',' '$14 >= 10 {count[$14]++} END {for (val in count) print val, count[val]}' 2019-12.csv| sort -nr | head -10
+ 1030  awk -F ',' '$14 >= 10 {count[$14]++} END {for (val in count) print val, count[val]}' 2019-12.csv| sort -r
+ 1031  awk -F ',' '$14 >= 10 {count[$14]++} END {for (val in count) print val, count[val]}' 2019-12.csv| sort -n -k 2 -r
+ 1032  awk -F ',' '$14 >= 10 {count[$14]++} END {for (val in count) print val, count[val]}' 2019-12.csv| sort -n -k 2 -r | head -20 > ~/CS131/ws7/result.txt
+ 1033  cat ~/CS131/ws7/result.txt 
+
+output the 20 most common tips in decending order to ws7.txt
+ 1034  awk -F ',' '$14 >= 10 {count[$14]++} END {for (val in count) print val, count[val]}' 2019-12.csv| sort -n -k 2 -r | head -20 > ~/CS131/ws7/ws7.txt 
+ 1035  cd ..
+ 1036  cd ws7/
+ 1037  ls
+ 1038  vi result.txt 
+ 1039  cat result.txt 
+ 1040  cat ws7.txt 
+ 1041  history 20 > cmnd.log
