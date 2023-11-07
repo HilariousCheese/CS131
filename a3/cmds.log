@@ -1,5 +1,4 @@
- 1010  cat ~/CS131/a3/top10.txt 
-
+#################################################################################
 Task 1
  1011  cat 2019-08.csv | awk -F ',' '{print $8,$17}' > ~/CS131/a3/top10.txt
  1012  cd ~/CS131/a3/
@@ -7,12 +6,12 @@ Task 1
  1014  mv top10.txt output.txt
  1061  cd 
  1062  cd CS131/taxidata/
-
+#################################################################################
 Task 2
  1063  cat 2019-08.csv | awk -F ',' '{print $8, $9, $17}' > ~/CS131/a3/output2.txt
  1064  cd ../a3/
  1065  cat output2.txt | head -10
-
+#################################################################################
 Task 2
  1066  awk -f output2.awk output2.txt | sort -n -k 3 -r | head -10
 
@@ -28,11 +27,7 @@ END {
         print pudo, sum[pudo] / count[pudo]
     }
 }
-
- 1067  vi a3.txt 
- 1068  vi output.awk
-
-
+#################################################################################
 Task 1
  1069  awk -f output.awk output.txt | sort -n -k 2 -r | head -10
 
@@ -48,8 +43,7 @@ END {
   }
 }
 
- 1070  history 100 > cmds.log
-
+#################################################################################
 Task 3
  1073  awk -f output3.awk ~/CS131/taxidata/2019-08.csv >> a3t3.dat 
 output3.awk
@@ -68,7 +62,7 @@ END {
   }
 }
 
-
+#################################################################################
 Task 4
  1093  awk -f output.awk output4.txt > a3t4.dat 
 awk file:
@@ -82,7 +76,5 @@ END {
     print key, sum[key] / count[key]
   }
 }
- 1094  cat a3t4.dat | tail -10
- 1095  cat a3t4.dat 
- 1096  vi a3t4.dat 
+
  1097  history | tail -10 >> cmds.log 
