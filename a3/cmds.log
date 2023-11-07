@@ -1,0 +1,51 @@
+ 1010  cat ~/CS131/a3/top10.txt 
+
+Task 1
+ 1011  cat 2019-08.csv | awk -F ',' '{print $8,$17}' > ~/CS131/a3/top10.txt
+ 1012  cd ~/CS131/a3/
+ 1013  ls
+ 1014  mv top10.txt output.txt
+ 1061  cd 
+ 1062  cd CS131/taxidata/
+
+Task 2
+ 1063  cat 2019-08.csv | awk -F ',' '{print $8, $9, $17}' > ~/CS131/a3/output2.txt
+ 1064  cd ../a3/
+ 1065  cat output2.txt | head -10
+
+Task 2
+ 1066  awk -f output2.awk output2.txt | sort -n -k 3 -r | head -10
+
+awk file:
+{
+    pair = $1 " " $2
+    sum[pair] += $3
+    count[pair]++
+}
+
+END {
+    for (pudo in sum) {
+        print pudo, sum[pudo] / count[pudo]
+    }
+}
+
+ 1067  vi a3.txt 
+ 1068  vi output.awk
+
+
+Task 1
+ 1069  awk -f output.awk output.txt | sort -n -k 2 -r | head -10
+
+awk file:
+{
+  sum[$1] += $2
+  count[$1]++
+}
+
+END {
+  for (key in sum) {
+    print key, sum[key] / count[key]
+  }
+}
+
+ 1070  history 100 > cmds.log
