@@ -9,6 +9,6 @@ BEGIN {
 
 END {
   for (key in sum) {
-    print key, sum[key] / count[key]
+    print key "," sum[key] / count[key]
   }
 }
