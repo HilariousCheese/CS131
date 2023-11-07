@@ -49,3 +49,40 @@ END {
 }
 
  1070  history 100 > cmds.log
+
+Task 3
+ 1073  awk -f output3.awk ~/CS131/taxidata/2019-08.csv >> a3t3.dat 
+output3.awk
+BEGIN {
+  FS = ","
+}
+
+{
+  sum[$4] += $14
+  count[$4]++
+}
+
+END {
+  for (key in sum) {
+    print key, sum[key] / count[key]
+  }
+}
+
+
+Task 4
+ 1093  awk -f output.awk output4.txt > a3t4.dat 
+awk file:
+{
+  sum[$1] += $2
+  count[$1]++
+}
+
+END {
+  for (key in sum) {
+    print key, sum[key] / count[key]
+  }
+}
+ 1094  cat a3t4.dat | tail -10
+ 1095  cat a3t4.dat 
+ 1096  vi a3t4.dat 
+ 1097  history | tail -10 >> cmds.log 

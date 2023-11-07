@@ -1,20 +1,14 @@
+BEGIN {
+  FS = ","
+}
+
 {
-    value = int($1)  # Round the value down to the nearest integer
-    if (value >= 0 && value <= 9) {
-        sum[value] += $2
-        count[value]++
-    }
+  sum[$4] += $14
+  count[$4]++
 }
 
 END {
-    for (value = 0; value <= 9; value++) {
-        if (count[value] > 0) {
-            average = sum[value] / count[value]
-            print value, average
-        }
-    }
+  for (key in sum) {
+    print key, sum[key] / count[key]
+  }
 }
-
-
-
-
