@@ -4,4 +4,4 @@ When initially reviewing the dataset, I identified several issues:
 #2 The placement of "YEAR" on the same line.
 #3 Blank spaces following "GENRE."
 
-To address these concerns, I used sed to fix the issues by removing "GROSS" from the header line; Moving "YEAR" to the next line; Eliminating the extra space after "GENRE."
+To address these issues, I used sed to fix those by removing "GROSS" from the header line; Moving "YEAR" to the next line; Eliminating the extra space after "GENRE."
