@@ -1,0 +1,40 @@
+ 1043  grep ',,,,' data.clean.csv
+ 1044  vi Salary_Data\ \(1\).csv
+ 1045  grep 'phD' Salary_Data\ \(1\).csv
+ 1046  grep 'degree' Salary_Data\ \(1\).csv
+ 1047  ls
+ 1048  mv Salary_Data\ \(1\).csv Salary_Data.csv
+ 1049  ls
+ 1050  ./cleanup.sh
+ 1051  ./find.edu.salary.sh | awk -f t.awk > data.edu.salary.csv
+ 1052  cat data.edu.salary.csv
+ 1053  vi find.edu.salary.sh
+ 1054  ./find.edu.salary.sh | awk -f t.awk > data.edu.salary.csv
+ 1055  cat data.edu.salary.csv
+ 1056  vi find.edu.salary.sh
+ 1057  ./find.edu.salary.sh | awk -f t.awk > data.edu.salary.csv
+ 1058  cat data.edu.salary.csv
+ 1059  vi data.clean.csv
+ 1060  grep ',,,,,' data.clean.csv
+ 1061  vi data.clean.csv
+ 1062  ./find.edu.salary.sh | awk -f t.awk > data.edu.salary.csv
+ 1063  cat data.edu.salary.csv
+ 1064  vi data.edu.salary.csv
+ 1065  ls
+ 1066  mv t.awk findAvg.awk
+ 1067  ls
+ 1068  ls
+ 1069  open g1.svg
+ 1070  vi data.edu.salary.csv
+ 1071  open g1.svg
+ 1072  vi data.experience.salary.csv
+ 1073  wc -l data.clean.csv
+ 1080  cp -r . ..
+ 1081  cd ..
+ 1082  ls
+ 1084  rm -r 2
+ 1085  ls
+ 1086  vi find.experience.salary.sh
+ 1087  vi find.edu.salary.sh
+ 1088  head data.clean.csv
+ 1093  history 100 > cmds.log
